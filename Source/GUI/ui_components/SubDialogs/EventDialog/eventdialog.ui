@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EventDialog</class>
+ <widget class="QDialog" name="EventDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>516</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>516</width>
+    <height>234</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>516</width>
+    <height>234</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sự kiện</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../resources.qrc">
+    <normaloff>:/images/icon/note.png</normaloff>:/images/icon/note.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#EventDialog {
+	background-color: #f5f5fa;
+}</string>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>9</y>
+     <width>516</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 24px;
+font-weight: bold;
+color: #f27d85;</string>
+   </property>
+   <property name="text">
+    <string>Tạo sự kiện</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveBtn">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>190</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background-color: #f27d85;
+	padding: 8px 12px;
+	border-radius: 15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Lưu</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_8" native="true">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>52</y>
+     <width>481</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget_8 {
+	border-radius: 15px;
+	background: white;
+}
+
+QLabel {
+	font-weight: bold;
+	color: #777;
+	font-size: 16px;
+}
+
+QLineEdit {
+	font-size: 16px;
+}</string>
+   </property>
+   <layout class="QFormLayout" name="formLayout_11">
+    <property name="horizontalSpacing">
+     <number>14</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>7</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_53">
+      <property name="text">
+       <string>Tên sự kiện</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="name">
+      <property name="styleSheet">
+       <string notr="true">padding: 4px 8px;
+border: 1px solid #777;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Tên sự kiện</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <spacer name="verticalSpacer_28">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_55">
+      <property name="text">
+       <string>Phần trăm giảm:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="percent">
+      <property name="styleSheet">
+       <string notr="true">padding: 4px 8px;
+border: 1px solid #777;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Phần trăm giảm giá</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CartEditDialog</class>
+ <widget class="QDialog" name="CartEditDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>233</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Giỏ hàng</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../resources.qrc">
+    <normaloff>:/images/icon/note.png</normaloff>:/images/icon/note.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+background-color: #f5f5fa;
+}</string>
+  </property>
+  <widget class="QLabel" name="name">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>31</y>
+     <width>225</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 16px;
+font-weight: bold;
+color: #333;</string>
+   </property>
+   <property name="text">
+    <string>Bạch mã hoàng tử VP</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="quantity">
+   <property name="geometry">
+    <rect>
+     <x>272</x>
+     <y>136</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	padding: 4px 4px;
+	font-size: 16px;
+	border: 1px solid #777;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="price">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>69</y>
+     <width>225</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-weight: bold;
+color: #f27d85;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>100.000đ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveBtn">
+   <property name="geometry">
+    <rect>
+     <x>173</x>
+     <y>192</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	background-color: #f27d85;
+	padding: 8px 10px;
+	border-radius: 15px;
+	border: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Lưu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="image">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>26</y>
+     <width>141</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/products/congrats/congrats1.jpg) 0 0 0 0 stretch stretch;
+border: 1px solid #777;
+border-radius: 20px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>136</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-weight: bold;
+color: #777;
+font-size: 16px;</string>
+   </property>
+   <property name="text">
+    <string>Số lượng:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="stock">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>99</y>
+     <width>225</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #333;
+font-size: 16px;
+font-weight: bold;
+</string>
+   </property>
+   <property name="text">
+    <string>1 sản phẩm có sẵn</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>18</x>
+     <y>19</y>
+     <width>401</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+border-radius: 20px;</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>name</zorder>
+  <zorder>quantity</zorder>
+  <zorder>price</zorder>
+  <zorder>saveBtn</zorder>
+  <zorder>image</zorder>
+  <zorder>label_4</zorder>
+  <zorder>stock</zorder>
+ </widget>
+ <resources>
+  <include location="../../../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

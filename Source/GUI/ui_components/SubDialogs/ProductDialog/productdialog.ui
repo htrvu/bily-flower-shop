@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProductDialog</class>
+ <widget class="QDialog" name="ProductDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>701</width>
+    <height>553</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>701</width>
+    <height>553</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Quản lý sản phẩm</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../resources.qrc">
+    <normaloff>:/images/icon/note.png</normaloff>:/images/icon/note.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#ProductDialog {
+	background-color: #f5f5fa;
+}</string>
+  </property>
+  <widget class="QPushButton" name="saveBtn">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>502</y>
+     <width>131</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background-color: #f27d85;
+	padding: 8px 12px;
+	border-radius: 15px;
+	border: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Lưu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dialogType">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>15</y>
+     <width>701</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 24px;
+font-weight: bold;
+color: #f27d85;</string>
+   </property>
+   <property name="text">
+    <string>Chỉnh sửa sản phẩm</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>59</y>
+     <width>661</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#horizontalWidget {
+	border: none;
+	background-color: white;
+	border-radius: 20px;
+}</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="5,3">
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px;</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout_7">
+       <property name="horizontalSpacing">
+        <number>14</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>7</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_17">
+         <property name="styleSheet">
+          <string notr="true">	font-weight: bold;
+	color: #777;</string>
+         </property>
+         <property name="text">
+          <string>Tên sản phẩm:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="name">
+         <property name="styleSheet">
+          <string notr="true">padding: 4px;
+border: 1px solid #777;</string>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <spacer name="verticalSpacer_18">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_18">
+         <property name="styleSheet">
+          <string notr="true">	font-weight: bold;
+	color: #777;</string>
+         </property>
+         <property name="text">
+          <string>Giá gốc:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="price">
+         <property name="styleSheet">
+          <string notr="true">padding: 4px;
+border: 1px solid #777;</string>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <spacer name="verticalSpacer_19">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_19">
+         <property name="styleSheet">
+          <string notr="true">	font-weight: bold;
+	color: #777;</string>
+         </property>
+         <property name="text">
+          <string>Số lượng kho:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="quantity">
+         <property name="styleSheet">
+          <string notr="true">padding: 4px;
+border: 1px solid #777;</string>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <spacer name="verticalSpacer_20">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_20">
+         <property name="styleSheet">
+          <string notr="true">	font-weight: bold;
+	color: #777;</string>
+         </property>
+         <property name="text">
+          <string>Mô tả:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QTextEdit" name="description">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">	font-weight: bold;
+	color: #777;</string>
+         </property>
+         <property name="text">
+          <string>Danh mục:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="category">
+         <property name="styleSheet">
+          <string notr="true">QComboBox {
+	padding: 4px 8px;
+	font-size: 18px;
+	color: #333;
+	background-color: white;
+	border: 1px solid #777;
+}</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Hoa tình yêu</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Hoa sinh nhật</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cây văn phòng</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Hoa chúc mừng</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Hoa chia buồn</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <spacer name="verticalSpacer_24">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="verticalWidget" native="true">
+      <widget class="QLabel" name="image">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>221</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid #777;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="browseImageBtn">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>280</y>
+         <width>131</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	background-color: #66b7af;
+	padding: 8px 12px;
+	border-radius: 15px;
+	border: none;
+}</string>
+       </property>
+       <property name="text">
+        <string>Duyệt ảnh</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

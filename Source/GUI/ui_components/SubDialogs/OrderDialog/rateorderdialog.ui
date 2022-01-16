@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RateOrderDialog</class>
+ <widget class="QDialog" name="RateOrderDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>372</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>372</width>
+    <height>234</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Đánh giá đơn hàng</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../resources.qrc">
+    <normaloff>:/images/icon/note.png</normaloff>:/images/icon/note.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#RateOrderDialog {
+	background-color: #f5f5fa;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>372</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 22px;
+font-weight: bold;
+color: #f27d85;</string>
+   </property>
+   <property name="text">
+    <string>Đánh giá đơn hàng</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>56</y>
+     <width>331</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget {
+	background-color: white;
+	border-radius: 20px;
+	padding: 16px 8px;
+}</string>
+   </property>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>70</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font-size: 18px;
+font-weight: bold;
+color: #006d77;
+border: none;
+</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="text">
+        <string>1</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">rateInput</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="text">
+        <string>2</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">rateInput</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="text">
+        <string>3</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">rateInput</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_4">
+       <property name="text">
+        <string>4</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">rateInput</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_5">
+       <property name="text">
+        <string>5</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">rateInput</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>13</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font-weight: bold;
+color: #777;</string>
+    </property>
+    <property name="text">
+     <string>Mã đơn hàng:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ID">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>13</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font-weight: bold;
+color: #333;</string>
+    </property>
+    <property name="text">
+     <string>O1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>50</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 16px;
+font-weight: bold;
+color: #777;</string>
+    </property>
+    <property name="text">
+     <string>Đánh giá của bạn:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="saveBtn">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>191</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	background-color: #f27d85;
+	padding: 4px 12px;
+	border-radius: 15px;
+	border: none;
+}</string>
+   </property>
+   <property name="text">
+    <string>Đánh giá</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../resources.qrc"/>
+ </resources>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="rateInput"/>
+ </buttongroups>
+</ui>
