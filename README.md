@@ -16,7 +16,7 @@ You can download the app from <a href="https://studenthcmusedu-my.sharepoint.com
 
 <h3 id="build-code">Build the source codes</h3>
 
-To build this source codes, you should use IDE Qt Creator and do the following steps:
+To build this source codes, you should use IDE Qt Creator and do the following steps: 
 <ul>
 <li>Change the directory to database in file CONSTANTS.h from "Database/..." to "../Database/..."</li>
 <li>Create folder Release inside folder Source</li>
@@ -31,7 +31,7 @@ We apply Singleton pattern in implementations of Providers and class Admin.
    
 <h3 id="demo">Demo</h3>
 <p style="text-align: center;">Home page</p>
-<img src="./Images/home.jpg"></img>
+<img src="./Images/home.jpg"></img> 
 <p style="text-align: center;">Login page</p>
 <img src="./Images/login.jpg"></img>
 <p style="text-align: center;">Product page</p>
