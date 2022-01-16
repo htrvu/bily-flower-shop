@@ -15,17 +15,17 @@ To build this source codes, you should use IDE Qt Creator and do the following s
 
 <h3> Class Diagram </h3>
 We apply Singleton pattern in implementations of Providers and class Admin.
-<img src="./UML.jpg"></img>
+<img style="margin-top: 12px;" src="./UML.jpg"></img>
    
 <h3>Demo</h3>
-<img src="./Images/home.jpg"></img>
 <p style="text-align: center;">Home page</p>
-<img src="./Images/login.jpg"></img>
+<img src="./Images/home.jpg"></img>
 <p style="text-align: center;">Login page</p>
-<img src="./Images/product.jpg"></img>
+<img src="./Images/login.jpg"></img>
 <p style="text-align: center;">Product page</p>
-<img src="./Images/account.jpg"></img>
+<img src="./Images/product.jpg"></img>
 <p style="text-align: center;">Account page</p>
+<img src="./Images/account.jpg"></img>
 
 
 <h3>About Us</h3>
