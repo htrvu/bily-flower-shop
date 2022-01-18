@@ -1,6 +1,6 @@
 <h1 style="text-align: center;">Bily Flower Shop</h1>
 
-This is our final project for OOP course.
+This is our final project for OOP Course.
 
 <span style="font-weight: bold;">Content:</span>
 <ul>
