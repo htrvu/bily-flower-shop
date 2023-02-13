@@ -12,6 +12,7 @@ This is our final project for OOP Course.
 
 
 <h3 id="try-our-app">Try our app</h3>
+
 You can download the app from the **Releases** section of this repo. Otherwise, let's clone this repository and the app is available in folder Release.
 
 <h3 id="build-code">Build the source codes</h3>
