@@ -12,7 +12,7 @@ This is our final project for OOP Course.
 
 
 <h3 id="try-our-app">Try our app</h3>
-You can download the app from <a href="https://studenthcmusedu-my.sharepoint.com/:u:/g/personal/20120025_student_hcmus_edu_vn/Ed6EqE7mtXFLhljTgn-_KU4Brhra5ZSYd9eGoix6X1aWCQ?e=l64Qtw">this link</a>, or clone this repository and the app is available in folder Release.
+You can download the app from the **Releases** section of this repo. Otherwise, let's clone this repository and the app is available in folder Release.
 
 <h3 id="build-code">Build the source codes</h3>
 
